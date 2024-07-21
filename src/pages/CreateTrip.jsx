@@ -21,6 +21,10 @@ const CreateTrip = () => {
     setFormData({ ...formData, [name]: value });
   };
 
+  useEffect(()=>{
+    document.title="Create Trip"
+  },[])
+
   useEffect(() => {
     console.log("formData:", formData);
   }, [formData]);

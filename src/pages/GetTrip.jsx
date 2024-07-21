@@ -12,6 +12,10 @@ const GetTrip = () => {
     const [trip,setTrip]= useState([]);
 
     useEffect(()=>{
+        document.title="View Trip"
+    },[])
+
+    useEffect(()=>{
         if(id){
             getTripData();
         }

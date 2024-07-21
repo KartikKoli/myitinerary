@@ -8,6 +8,7 @@ const MyTrips = () => {
     const [userTrips, setUserTrips]= useState([]);
 
     useEffect(()=>{
+        document.title="My Trips"
         getTrips();
     },[])
 

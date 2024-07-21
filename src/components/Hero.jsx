@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 const Hero = () => {
+
+    useEffect(()=>{
+        document.title='Home'
+    },[])
+
   return (
     <div className='flex flex-col items-center sm:px-10 md:px-32 lg:px-56 xl:px-72 px-5 mt-10'>
       <h1 className='font-extrabold text-[40px]'>AI Powered Itinerary Generation</h1>
